@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .show{
+    display: block;}
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Events</h1>
+    <h2>The onclick Event</h2>
+    <p>
+        Click on the button to open the dropdown menu.</p>
+    <div class="container">
+        <button id = "mydropdownBtn">DROPDOWN</button>
+        <div id="dropdown" class="display">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("mydropdownBtn").onclick = function(){myFunction()};
+        function myFunction(){
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
